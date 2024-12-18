@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compass Starter by Ariona, Rian</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light-dark py-4">
+      <div class="container">
+        <div class="logo d-flex align-items-center my-4 ms-lg-5">
+          <div class="logo-image me-2">
+            <img src="../images/logo@2x.png" class="img-fluid" alt="logo" />
+          </div>
+          <div
+            class="logo-content d-flex flex-column justify-content-center align-items-start"
+          >
+            <a class="navbar-brand pb-0 fw-bolder" href="#">Company name</a>
+            <span> tagline goes here </span>
+          </div>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class=""><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div
+          class="collapse text-center navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-5">
+            <li id="firstLi" class="nav-item">
+              <a class="nav-link" aria-current="page" id="Home" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li id="lastLi" class="nav-item">
+              <a class="nav-link active" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="bg-light-dark pb-5">
+        <div class="rounded-pill w-75 mx-auto mb-4 p-4 bg-light-gray">
+          <a id="homeLink" href="#">Home</a>
+          <span id="arrow-right"><i class="fa-solid fa-arrow-right"></i></span>
+          <a href="" class="text-white">Contact</a>
+        </div>
+
+        <div class="contactUs">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-4 offset-lg-1 mb-3">
+                <div class="inner_ h-350PX bg-light-gray rounded-3 pt-5 w-100">
+                  <div class="location mt-6 px-3 pt-5 d-flex align-items-top">
+                    <div class="location-image">
+                      <img
+                        class="me-3 img-fluid"
+                        src="../images/icon-marker@2x.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="location-details">
+                      <p class="text-light-gray mb-0">Company Name INC.</p>
+                      <p class="text-light-gray mb-0">
+                        2803 Avenue Street, Los Angeles
+                      </p>
+                    </div>
+                  </div>
+                  <div class="mt-3 px-3 contact_ d-flex align-items-center">
+                    <div class="phone logo d-flex align-items-center">
+                      <img
+                        class="me-3"
+                        src="../images/icon-phone@2x.png"
+                        alt=""
+                      />
+                      <p class="text-light-gray">+1 800 314 235</p>
+                    </div>
+                    <div class="mail logo ms-5 d-flex align-items-center">
+                      <img
+                        class="me-3"
+                        src="../images/icon-envelope@2x.png"
+                        alt=""
+                      />
+                      <p class="text-light-gray">contact@companyname.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 offset-lg-1">
+                <h1 class="text-white">Contact us</h1>
+                <p class="text-light-gray">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Libero autem, perspiciatis obcaecati voluptate dolore
+                  consequatur aliquam tempore culpa quod quos ratione temporibus
+                  voluptates cum esse quis incidunt reprehenderit dignissimos
+                  id?
+                </p>
+                <form action="">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <input
+                        type="text"
+                        name="UserName"
+                        id="UserName"
+                        placeholder="Your name..."
+                        class="form-control rounded-5 w-lg-50 py-2 mt-3"
+                      />
+                    </div>
+                    <div class="col-lg-6">
+                      <input
+                        type="text"
+                        name="userEmail"
+                        id="userEmail"
+                        placeholder="Your email..."
+                        class="form-control rounded-5 w-lg-50 py-2 mt-3"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <input
+                        type="text"
+                        name="companyName"
+                        id="companyName"
+                        placeholder="company name..."
+                        class="form-control rounded-5 w-lg-50 py-2 mt-3"
+                      />
+                    </div>
+                    <div class="col-lg-6">
+                      <input
+                        type="text"
+                        name="webSite"
+                        id="webSite"
+                        placeholder="website..."
+                        class="form-control rounded-5 w-lg-50 py-2 mt-3"
+                      />
+                    </div>
+                  </div>
+                  <textarea
+                    class="form-control rounded-5 mt-4"
+                    name="message"
+                    id="message"
+                    placeholder="message"
+                  ></textarea>
+                </form>
+                <button
+                  class="btn btn-info text-white my-3 d-block ms-auto rounded-pill px-4 py-2"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="Footer-section p-4">
+      <div class="container">
+        <div class="subscribe row">
+          <div class="py-5 d-flex page-input col-lg-7">
+            <input
+              class="form-control rounded-pill py-3"
+              type="text"
+              name="Location"
+              id="Location"
+              placeholder="Enter your Email to subscribe"
+            />
+            <button class="btn btn-info rounded-pill px-4 py-2">
+              Subscribe
+            </button>
+          </div>
+          <div class="col-lg-4 py-lg-5 offset-lg-1">
+            <div class="our-links">
+              <span><i class="fa-brands fa-facebook-f"></i></span>
+              <span><i class="fa-brands fa-twitter"></i></span>
+              <span><i class="fa-brands fa-google-plus-g"></i></span>
+              <span><i class="fa-brands fa-pinterest"></i></span>
+            </div>
+          </div>
+        </div>
+        <p class="copy-right mt-3 mt-lg-0">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

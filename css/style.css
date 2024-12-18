@@ -1,0 +1,310 @@
+/********************************* Start Global *********************************/
+  body {
+    font-family: "Open Sans";
+  }
+  
+  .bg-light-dark {
+    background-color: #1e202b;
+  }
+  .bg-light-gray {
+    background-color: #262936;
+  }
+  .h-350PX {
+    height: 350px;
+  }
+  .mt-6 {
+    margin-top: 90px;
+  }
+  /********************************* End * Global *********************************/
+  /********************************* Start NavBar *********************************/
+  
+  .logo-image {
+    width: 64px;
+    height: 38px;
+  }
+  .logo {
+    cursor: pointer;
+  }
+  .logo .logo-content a {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: normal;
+    color: #fff;
+  }
+  .logo .logo-content span {
+    font-weight: 300;
+    font-size: 0.625rem;
+    line-height: 15px;
+    color: #bfc1c8;
+  }
+  nav li a {
+    color: #fff !important;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    font-weight: 400;
+    margin-bottom: 0 !important;
+  }
+  nav ul {
+    padding: 20px;
+  }
+  .navbar-nav {
+    border-radius: 15px !important;
+  }
+  nav li {
+    /* padding: 5px 15px; */
+    margin: 0 15px;
+    background-color: #262936;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  nav .nav-link.active {
+    color: #1e76a5 !important;
+  }
+  #lastLi {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  #firstLi {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  nav .navbar-toggler {
+    border: 3px solid transparent;
+    color: #fff;
+    transition: all 0.5s;
+    padding: 15px 10px;
+    border-radius: 25px;
+  }
+  
+  nav .navbar-toggler:hover {
+    border-color: #1e76a5;
+    color: #1e76a5;
+  }
+  
+  nav .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  nav li:focus {
+    box-shadow: none;
+  }
+  /********************************* End * NavBar *********************************/
+  /********************************* Start Section1 *******************************/
+  .section1 {
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-color: #1e202b;
+  }
+  .card {
+    border: none;
+  }
+  .section1 .card-header {
+    color: #bfc1c8;
+    background-color: #2d303d;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    font-weight: 400;
+    border: none;
+  }
+  .section1 .card-body {
+    background-color: #323544;
+  }
+  .section1 .card-body h4 {
+    margin: 20px 5px;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    font-weight: 400;
+    color: #bfc1c8;
+  }
+  .section1 .temp {
+    text-align: center;
+    font-size: 5.625rem;
+    line-height: 8.4375rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  .status {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    font-weight: 400;
+    color: #009ad8;
+  }
+  .footer img {
+    width: 21px;
+    height: 21px;
+  }
+  .section1 .footer {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    color: #bfc1c8;
+  }
+  
+  #second-day .card-header {
+    background-color: #222530;
+  }
+  #second-day .card-body {
+    background-color: #262936;
+  }
+  #second-day {
+    border-radius: 0;
+  }
+  #second-day .card-header {
+    border-radius: 0;
+  }
+  
+  .section1 .temp-day {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 30px;
+  }
+  .section1 .smaller-temp {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: #bfc1c8;
+  }
+  .page-input {
+    position: relative;
+  }
+  .page-input input {
+    background-color: #1e202b;
+    border: none;
+    color: #fff;
+  }
+  input::placeholder {
+    font-size: 0.875rem;
+    line-height: normal;
+    font-weight: 400;
+    color: #bfc1c8 !important;
+  }
+  .form-control:focus {
+    background-color: #1e202b;
+    box-shadow: none;
+    color: #fff;
+  }
+  .page-input button {
+    position: absolute;
+    right: 10px;
+    top: 55px;
+    color: #fff;
+  }
+  .page-input button:hover {
+    color: #fff;
+  }
+  
+  /********************************* End * Section1 *******************************/
+  /********************************* Start  Footer *******************************/
+  .Footer-section {
+    background-color: #262936;
+  }
+  .Footer-section .our-links {
+    display: flex;
+    gap: 2px;
+  }
+  .Footer-section .our-links span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #1e202b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #009ad8;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  .Footer-section .our-links span:hover {
+    background-color: #009ad8;
+    color: #fff;
+  }
+  .Footer-section button {
+    right: 20px;
+  }
+  .copy-right {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    font-weight: 300;
+    color: #bfc1c8;
+  }
+  
+  /********************************* Start  Contact ******************************/
+  #homeLink {
+    color: #bfc1c8;
+  }
+  #arrow-right {
+    color: #595d6a;
+    font-size: 0.625rem;
+  }
+  .text-light-gray {
+    color: #bfc1c8;
+  }
+  .contactUs textarea {
+    height: 150px;
+    max-height: 150px;
+    background-color: #1e202b;
+    border: solid 3px #595d6a;
+    transition: all 0.2s;
+    padding: 10px 10px;
+  }
+  .contactUs input {
+    background-color: #1e202b;
+    border: solid 3px #595d6a;
+    transition: all 0.2s;
+  }
+  .contactUs input:hover {
+    border-color: #1e76a5;
+  }
+  .contactUs textarea:hover {
+    border-color: #1e76a5;
+  }
+  textarea::placeholder {
+    font-size: 0.875rem;
+    line-height: normal;
+    color: #fff !important;
+  }
+  .location {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    font-weight: 300;
+  }
+  .contact_ {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    font-weight: 300;
+  }
+  /********************************* End * Contact *******************************/
+  
+  /********************************* End * Footer *******************************/
+  
+  @media screen and (min-width: 991px) {
+    #lastLi {
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+    #firstLi {
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+    nav li {
+      border: 2px solid #212529;
+      border-radius: 25px;
+      transition: all 0.5s;
+      background-color: transparent;
+      padding: 0;
+    }
+  
+    nav li:hover {
+      border-color: #1e76a5;
+    }
+    nav li a {
+      transition: all 0.5s;
+    }
+    nav li:hover a {
+      color: #1e76a5 !important;
+    }
+    nav .nav-link.active {
+      border: 2px solid #1e76a5;
+      border-radius: 25px;
+    }
+  }

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <!----------------------------------------- Start NavBar ----------------------------------------->
+
+    <nav class="navbar navbar-expand-lg bg-light-dark py-4">
+      <div class="container">
+        <div class="logo d-flex align-items-center my-4 ms-lg-5">
+          <div class="logo-image me-2">
+            <img src="images/logo@2x.png" class="img-fluid" alt="logo" />
+          </div>
+          <div
+            class="logo-content d-flex flex-column justify-content-center align-items-start"
+          >
+            <a class="navbar-brand pb-0" href="#">Weather</a>
+            <span> tagline goes here </span>
+          </div>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class=""><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div
+          class="collapse text-center navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-5">
+            <li id="firstLi" class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li id="lastLi" class="nav-item">
+              <a class="nav-link" id="Contact" href="pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!----------------------------------------- End - NavBar ----------------------------------------->
+    <!----------------------------------------- Start Main   ----------------------------------------->
+    <main>
+      <section class="section1 py-5">
+        <div class="container px-5">
+          <div class="py-5 d-flex page-input">
+            <input
+              class="form-control rounded-pill py-3"
+              type="text"
+              name="Location"
+              id="LocationInput"
+              placeholder="Find your location..."
+            />
+            <button class="btn btn-info rounded-pill px-5 py-2">Find</button>
+          </div>
+          <div class="row g-0">
+            <div class="col-lg-4">
+              <div class="card overflow-hidden">
+                <div
+                  class="card-header d-flex justify-content-between align-items-center"
+                >
+                  <h5 class="m-0" id="today"></h5>
+                  <span id="todayDate"> </span>
+                </div>
+                <div class="card-body">
+                  <h4 id="Location_" class="card-title"></h4>
+                  <div class="temp d-flex">
+                    <p id="Temperature" class=""></p>
+                    <span><sup>o</sup>C </span>
+                  </div>
+                  <div class="cloud-img">
+                    <img id="icon1" src="" alt="" />
+                  </div>
+                  <span id="status1" class="status"></span>
+                  <div
+                    class="footer d-flex justify-content-start align-items-center mt-3"
+                  >
+                    <div class="rains me-4 d-flex">
+                      <div class="umperrla-image me-1">
+                        <img src="images/icon-umberella@2x.png" alt="" />
+                      </div>
+                      <span id="willRain"></span>
+                    </div>
+                    <div class="winds d-flex me-4">
+                      <div class="winds-image me-1">
+                        <img src="images/icon-wind@2x.png" alt="" />
+                      </div>
+                      <span id="maxWind"></span>
+                    </div>
+                    <div class="directions d-flex">
+                      <div class="directions-image me-1">
+                        <img src="images/icon-compass@2x.png.png" alt="" />
+                      </div>
+                      <span>East</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div
+                id="second-day"
+                class="card h-100 text-center overflow-hidden"
+              >
+                <div
+                  class="card-header d-flex justify-content-between align-items-center"
+                >
+                  <h5 id="tomorrow" class="m-0"></h5>
+                  <span id="tomorrowDate"></span>
+                </div>
+                <div class="card-body">
+                  <div class="cloud-img">
+                    <img id="DayTwoIcon" src="" alt="" />
+                  </div>
+                  <div class="temp-day justify-content-center d-flex">
+                    <p id="DayTowMaxTemp" class=""></p>
+                    <span><sup>o</sup>C </span>
+                  </div>
+                  <div class="smaller-temp">
+                    <p id="DayTowMinTemp"><sup>o</sup></p>
+                  </div>
+                  <span id="DayTwoStatus" class="status"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="card h-100 text-center overflow-hidden">
+                <div
+                  class="card-header d-flex justify-content-between align-items-center"
+                >
+                  <h5 id="DayAfter" class="m-0"></h5>
+                  <span id="DayAfterDate"></span>
+                </div>
+                <div class="card-body">
+                  <div class="cloud-img">
+                    <img id="DayThreeIcon" src="" alt="" />
+                  </div>
+                  <div class="temp-day justify-content-center d-flex">
+                    <p id="DayThreeMaxTemp" class=""></p>
+                    <span><sup>o</sup>C </span>
+                  </div>
+                  <div class="smaller-temp">
+                    <p id="DayThreeMinTemp"><sup>o</sup></p>
+                  </div>
+                  <span id="DayThreeStatus" class="status"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!----------------------------------------- End - Main   ----------------------------------------->
+    <!----------------------------------------- Start Footer ----------------------------------------->
+    <footer class="Footer-section p-4">
+      <div class="container">
+        <div class="subscribe row">
+          <div class="py-5 d-flex page-input col-lg-7">
+            <input
+              class="form-control rounded-pill py-3"
+              type="text"
+              name="Location"
+              id="Location"
+              placeholder="Enter your Email to subscribe"
+            />
+            <button class="btn btn-info rounded-pill px-4 py-2">
+              Subscribe
+            </button>
+          </div>
+          <div class="col-lg-4 py-lg-5 offset-lg-1">
+            <div class="our-links">
+              <span><i class="fa-brands fa-facebook-f"></i></span>
+              <span><i class="fa-brands fa-twitter"></i></span>
+              <span><i class="fa-brands fa-google-plus-g"></i></span>
+              <span><i class="fa-brands fa-pinterest"></i></span>
+            </div>
+          </div>
+        </div>
+        <p class="copy-right mt-3 mt-lg-0">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </footer>
+    <!----------------------------------------- End Footer   ----------------------------------------->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
